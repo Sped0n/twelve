@@ -111,9 +111,8 @@ html
 #### Nested list
 
 - Item
-
-1. First Sub-item
-2. Second Sub-item
+  1. First Sub-item
+  2. Second Sub-item
 
 ## Other Elements — abbr, sub, sup, kbd, mark
 
@@ -123,6 +122,6 @@ H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
