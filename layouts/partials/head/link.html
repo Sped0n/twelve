@@ -1,0 +1,5 @@
+{{/* fingerprint */}}
+{{- $fingerprint := .Scratch.Get "fingerprint" | default "" -}}
+
+{{- $style := dict "Link" "/bundled/css/style.min.css" -}}
+{{- partial "plugin/style.html" $style -}}

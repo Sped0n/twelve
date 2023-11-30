@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <span class="font-medium text-2xl">Latest</span>
+  <div class="mt-6">
+    {{ range (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+      <div class="mb-5">
+        <a href="{{ .Permalink }}">{{ .Title }}</a><br />
+        <span class="post-item post-date inline-block min-w-[11rem] mb:min-w-[12rem]"
+          >{{ .Date.Format "January 2, 2006" }}</span
+        ><span>{{ index .Params.categories 0 | default "Undefined" }}</span>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

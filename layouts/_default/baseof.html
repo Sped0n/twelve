@@ -1,0 +1,16 @@
+<!doctype html>
+<html class="text-base font-normal text-black bg-white" lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello</title>
+    {{- partial "head/link.html" -}}
+  </head>
+  <body class="flex flex-col min-h-screen justify-between">
+    {{- partial "header.html" . -}}
+    <div class="container py-16 px-5 mb-auto mt-10 max-w-3xl mx-auto">
+      {{- block "main" . }}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>
